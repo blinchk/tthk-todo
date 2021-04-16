@@ -1,0 +1,42 @@
+:root {
+    --blue-color: #43dbcf;
+    --light-blue: #c0faf6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #e4e8fd;
+    background-image: linear-gradient(65deg, var(--blue-color) 50%, var(--light-blue) 100%);
+    min-height: 100vh;
+}
+
+h1 {
+    color: #fff;
+    padding: 1rem;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+#heading {
+    background-color: var(--blue-color);
+    text-align: center;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+
