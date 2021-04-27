@@ -1,42 +1,72 @@
 :root {
-    --blue-color: #43dbcf;
-    --light-blue: #c0faf6;
+  --blue-color: #43dbcf;
+  --light-blue: #c0faf6;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    background-color: #e4e8fd;
-    background-image: linear-gradient(65deg, var(--blue-color) 50%, var(--light-blue) 100%);
-    min-height: 100vh;
+  background-color: #e4e8fd;
+  background-image: linear-gradient(
+    65deg,
+    var(--blue-color) 50%,
+    var(--light-blue) 100%
+  );
+  min-height: 100vh;
 }
 
 h1 {
-    color: #fff;
-    padding: 1rem;
+  color: #fff;
+  padding: 1rem;
 }
 
 .container {
-    max-width: 400px;
-    margin: 50px;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  margin: 50px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
 }
 
 #heading {
-    background-color: var(--blue-color);
-    text-align: center;
+  background-color: var(--blue-color);
+  text-align: center;
 }
 
-#form {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  text-align: center;
+  margin: 20px;
 }
 
+.form__task {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+}
 
+.form__task:focus {
+  border: none;
+  border-bottom: solid 1px black;
+}
+
+.form__btn {
+  padding: 1rem 2.5rem;
+  border: none;
+}
+
+.todo-list {
+  margin: 0 20px;
+}
+
+input[type="text"] {
+  border: none;
+  padding: 0;
+}
